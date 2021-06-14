@@ -26,7 +26,9 @@ height: 100%;
 }
 
 body{
-    background: #d4f1ff!important;
+    background-image: url(/assets/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     height: 100%;
 }
 
@@ -37,64 +39,132 @@ body{
 }
 
 .anuncio{
-    border: 2px solid black;
-    position: relative;
+
     top: 4%;
     text-align: center;
     background-image: url(/assets/images/Group\ 1.svg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 90%
+    background-position: top;
+    background-size: 70%
 }
 
 .piedraStyle{
-    position: absolute;
-    top:50%;
-    left: 50%;
+    top: 1.3em;
+    left:4.7em;
     font-family: 'les_paulnormal';
     color: #FCC814;
     -webkit-text-stroke: 1px #ffff;
-    text-shadow: 5px 5px 3px rgb(56 56 56);
+    text-shadow: 0 0 20px rgb(255 255 176);
     width: fit-content;
-    font-size: 6vw;
-    transform: rotate(21deg);
-}
-
-
-.papelStyle{
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 6vw;
+    font-size: 5vw;
     transform: rotate(335deg);
-    width: fit-content;
-    font-family: 'les_paulnormal';
-    color: #e479a1;
-    -webkit-text-stroke: 1px #ffff;
-    text-shadow: 5px 5px 3px rgb(56 56 56);
+    animation: animate 5s linear infinite;
+
 }
+
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #dfb93e;
+        text-shadow: none;
+    }
+    18.1%,20.1%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #ffdf6a;
+        text-shadow: 0 0 10px #fde691,
+        0 0 20px #fde691,
+        0 0 40px #fde691,
+        0 0 80px #fde691,
+        0 0 160px #fde691;
+    }
+}
+   
+    
+    .papelStyle{
+        top: 1.3em;
+        left:  7.5em;
+        font-size: 5vw;
+        transform: rotate(21deg);
+        width: fit-content;
+        font-family: 'les_paulnormal';
+        -webkit-text-stroke: 1px #ffff;
+        animation: papel 3.5s linear infinite;
+}
+
+@keyframes papel{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #cc8ca3;
+        text-shadow: none;
+    }
+    18.1%,20.1%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #ffaecc;
+        text-shadow: 0 0 20px #ffaecc,
+        0 0 20px #ffaecc,
+        0 0 40px #ffaecc,
+        0 0 80px #ffaecc,
+        0 0 160px #ffaecc;
+    }
+}
+
 
 .tijeraStyle{
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size:8vw;
+    top: 2.5em;
+    left: 6em;
+    font-size:5vw;
     width: fit-content;
     font-family: 'les_paulnormal';
-    color: #4F7E93;
     -webkit-text-stroke: 1px #ffff; 
-    text-shadow: 5px 5px 3px rgb(56 56 56);
+    animation: tijera 2s linear infinite;
+    z-index: 0;
 }
-
+@keyframes tijera{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #4F7E93;
+        text-shadow: none;
+    }
+    18.1%,20.1%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #a6e4ff;
+        text-shadow: 0 0 10px #a0e1ff,
+        0 0 20px #a0e1ff,
+        0 0 40px #a0e1ff,
+        0 0 80px #a0e1ff,
+        0 0 160px #a0e1ff;
+    }
+}
+.eligeTuOpcion{
+    font-family: 'les_paulnormal';
+    font-size: 5em;
+    color: #D31E4A;
+    left: 6em;
+    top: 5.5em;
+    text-shadow: -1px 0px 20px rgb(255 190 190);
+    -webkit-text-stroke: 1px #ffff;
+}
+.bola{
+    position: absolute;
+    background-color: #D31E4A;
+    border-radius: 50px;
+    width: 1.7em;
+    height: 1.7em;
+    left: 37.9em;
+    top: 4.7em;
+border: 1px solid white;
+}
 .tipo7{
     font-family: 'les_pauloutline';
-    font-size: 9em;
+    font-size:5em;
     color: red;
 }
-/* 
-.letrero{
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
 
+.displaySelection{
+
+}
+
+.displaySelection img{
+    border: 1px solid rgb(255, 0, 0);
+    width: 15vw;
+}
