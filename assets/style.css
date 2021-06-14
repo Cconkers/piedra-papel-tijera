@@ -1,0 +1,100 @@
+
+
+@font-face {
+    font-family: 'les_paulextras';
+    src: url('lespaul-extras-webfont.woff2') format('woff2'),
+         url('lespaul-extras-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'les_paulnormal';
+    src: url('lespaul-normal-webfont.woff2') format('woff2'),
+         url('lespaul-normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'les_pauloutline';
+    src: url('lespaul-outline-webfont.woff2') format('woff2'),
+         url('lespaul-outline-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+height: 100%;
+}
+
+body{
+    background: #d4f1ff!important;
+    height: 100%;
+}
+
+
+.tipo2{
+    font-family: 'les_paulextras';
+    font-size: 9em;
+}
+
+.anuncio{
+    border: 2px solid black;
+    position: relative;
+    top: 4%;
+    text-align: center;
+    background-image: url(/assets/images/Group\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%
+}
+
+.piedraStyle{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    font-family: 'les_paulnormal';
+    color: #FCC814;
+    -webkit-text-stroke: 1px #ffff;
+    text-shadow: 5px 5px 3px rgb(56 56 56);
+    width: fit-content;
+    font-size: 6vw;
+    transform: rotate(21deg);
+}
+
+
+.papelStyle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 6vw;
+    transform: rotate(335deg);
+    width: fit-content;
+    font-family: 'les_paulnormal';
+    color: #e479a1;
+    -webkit-text-stroke: 1px #ffff;
+    text-shadow: 5px 5px 3px rgb(56 56 56);
+}
+
+.tijeraStyle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size:8vw;
+    width: fit-content;
+    font-family: 'les_paulnormal';
+    color: #4F7E93;
+    -webkit-text-stroke: 1px #ffff; 
+    text-shadow: 5px 5px 3px rgb(56 56 56);
+}
+
+.tipo7{
+    font-family: 'les_pauloutline';
+    font-size: 9em;
+    color: red;
+}
+/* 
+.letrero{
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
